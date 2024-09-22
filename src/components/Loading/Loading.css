@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-color: #f0f0f0; 
+  }
+
+#h2-load{
+    color: black;
+    font-family: "Righteous", sans-serif;
+  
+}  
+  

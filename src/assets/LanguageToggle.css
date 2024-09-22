@@ -1,0 +1,31 @@
+.language-toggle {
+  position: relative;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.language-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  margin-top: 5px;
+  z-index: 100;
+}
+
+.language-option {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.language-option:hover {
+  background-color: #f0f0f0;
+}
+
+.language-option.active {
+  background-color: #d3d3d3;
+}

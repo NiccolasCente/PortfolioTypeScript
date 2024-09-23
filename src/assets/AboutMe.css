@@ -1,0 +1,32 @@
+.about-me-section {
+  margin-left: 10em;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  margin-top: 10em;
+
+ 
+}
+
+.about-me, .about-me-new {
+  display: flex;
+  align-items: center; 
+  max-width: 1200px; 
+  width: 100%; 
+  margin-bottom: 2em; 
+  margin-left: 18em;
+  
+
+}
+
+.about-me-section img {
+  width: 500px; 
+  height: 300px; 
+  border-radius: 10px;
+}
+
+.about-content, .about-content-new {
+  margin-left: 1em;
+  flex: 1; 
+  max-width: 600px; 
+}

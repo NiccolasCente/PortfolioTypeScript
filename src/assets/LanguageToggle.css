@@ -29,3 +29,21 @@
 .language-option.active {
   background-color: #d3d3d3;
 }
+
+body.dark-mode .language-options {
+  background-color: #333;
+  border: 1px solid #444;
+}
+
+body.dark-mode .language-option {
+  color: #fff;
+}
+
+body.dark-mode .language-option:hover {
+  background-color: #555;
+}
+
+body.dark-mode .language-option.active {
+  background-color: #777;
+}
+

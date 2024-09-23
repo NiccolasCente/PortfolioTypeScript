@@ -6,22 +6,17 @@ body.light-mode {
 }
 
 body.dark-mode {
-  background-color: black;
+  background-color: rgb(61, 61, 61);
+  color: white;
+  font-family: "Righteous", sans-serif;
+}
+
+header.dark-mode{
   color: white;
   font-family: "Righteous", sans-serif;
 }
 
 body.dark-mode p {
   color: white; 
-}
-section {
-  opacity: 0; 
-  transform: translateY(20px); 
-  transition: opacity 0.5s ease, transform 0.5s ease; 
-}
-
-section.visible {
-  opacity: 1; 
-  transform: translateY(0); 
 }
 

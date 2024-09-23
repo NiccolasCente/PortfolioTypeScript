@@ -11,6 +11,9 @@ body.dark-mode {
   font-family: "Righteous", sans-serif;
 }
 
+body.dark-mode p {
+  color: white; 
+}
 section {
   opacity: 0; 
   transform: translateY(20px); 

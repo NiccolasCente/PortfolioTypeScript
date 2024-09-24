@@ -26,8 +26,10 @@ const Footer: React.FC = () => {
     }
   };
 
+  
+
   return (
-    <footer className="footer">
+    <footer id='contatos' className="footer">
       <div className="footer-container">
         <div className="footer-contact-section">
           <AnimatedSection animation="fade-in">

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ThemeToggle from "../Hooks/ThemeToogle"; 
 import LanguageToggle from "../Hooks/LanguageToogle"; 
 import AnimatedSection from "../Hooks/AnimatedSection";
@@ -9,6 +9,7 @@ import "../../assets/Header.css";
 
 const Header: React.FC = () => {
   const { language } = useLanguage(); 
+  const [isMenuOpen, setIsMenuOpen] = useState(false); 
 
   const translations = {
     'pt-BR': {
@@ -31,8 +32,18 @@ const Header: React.FC = () => {
     }
   };
 
+  const scrollToSection = (event: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    event.preventDefault();
+    const section = document.getElementById(id);
+    section?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen); 
+  };
+
   return (
-    <header>
+    <header id="home">
       <div id="header-container">
         <AnimatedSection animation="fade-in">
           <div className="header-title">
@@ -49,13 +60,18 @@ const Header: React.FC = () => {
               <LanguageToggle /> 
             </AnimatedSection>
           </div>
+          <div className="menu-icon" onClick={toggleMenu}>
+            <div className="bar"></div>
+            <div className="bar"></div>
+            <div className="bar"></div>
+          </div>
           <AnimatedSection animation="fade-in">
-            <nav>
+            <nav className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
               <ul>
-                <li><a href="#home">{translations[language].navItems.home}</a></li> 
-                <li><a href="#sobre">{translations[language].navItems.about}</a></li>
-                <li><a href="#projetos">{translations[language].navItems.projects}</a></li>
-                <li><a href="#contatos">{translations[language].navItems.contacts}</a></li>
+                <li><a href="#home" onClick={(e) => scrollToSection(e, 'home')}>{translations[language].navItems.home}</a></li> 
+                <li><a href="#sobre" onClick={(e) => scrollToSection(e, 'sobre')}>{translations[language].navItems.about}</a></li>
+                <li><a href="#projetos" onClick={(e) => scrollToSection(e, 'projetos')}>{translations[language].navItems.projects}</a></li>
+                <li><a href="#contatos" onClick={(e) => scrollToSection(e, 'contatos')}>{translations[language].navItems.contacts}</a></li>
               </ul>
             </nav>
           </AnimatedSection>

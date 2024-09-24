@@ -86,7 +86,7 @@ const AboutMe: React.FC = () => {
   const langContent = translations[language] || translations['pt-BR']; 
   
   return (
-    <section className="about-me-section">
+    <section id="sobre"className="about-me-section">
       <div className="about-me">
         <AnimatedSection animation='fade-in'>
           <img src={AboutMeImage} alt={langContent.aboutMe} className="about-image" />

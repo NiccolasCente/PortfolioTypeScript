@@ -85,71 +85,98 @@ p {
   max-width: 20vw;
   max-height: 20vw;
   border-radius: 30px;
-  border: 2px solid rgb(255, 255, 255); 
+  border: 1px solid rgb(255, 255, 255); 
 }
 
-@media (max-width: 768px) {
-  main {
-    flex-direction: column;
-    min-height: auto;
-    padding: 20px;
-  }
 
-  .content-container {
+@media (max-width: 420px) {
+  main {
     flex-direction: column;
     align-items: center;
   }
 
-  #img-main {
-    order: 1;
-    margin-bottom: 20px;
-    
+  .content-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
   }
 
-  #text-container {
-    text-align: center;
-    max-width: 100%;
-    order: 2;
+  #img-main img {
+    max-width: 40vw;
+    max-height: 40vw;
+    margin-bottom: 20px;
   }
+
 
   h1 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-    order: 3;
+    font-size: 25px;
+    text-align: center;
   }
 
   p {
-    font-size: 1rem;
-    margin-bottom: 20px;
-    order: 4;
+    font-size: 20px;
   }
 
   #icon-container {
     justify-content: center;
     gap: 10px;
-    margin-bottom: 20px;
-    order: 5;
+    margin-top: 15px;
   }
 
   #skills-container {
-    padding-top: 2em;
     align-items: center;
-    order: 6;
-  }
-
-  #skills-container p {
-    text-align: center;
-    margin-bottom: 1em;
-
-  }
-
-  .skill-pair {
-    justify-content: center;
+    padding-top: 2em;
+    gap: 15px;
   }
 
   .skill-pair img {
-    width: 7vw;
-    height: 7vw;
+    width: 30px;
+    height: 30px;
   }
-}
 
+  .dark-mode main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dark-mode .content-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  .dark-mode #img-main img {
+    max-width: 40vw;
+    max-height: 40vw;
+    margin-bottom: 20px;
+    border: 2px solid white;
+  }
+
+  .dark-mode h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .dark-mode p {
+    font-size: 20px;
+    color: rgb(200, 200, 200);
+  }
+
+  .dark-mode #icon-container {
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .dark-mode #skills-container {
+    align-items: center;
+    padding-top: 2em;
+    gap: 15px;
+  }
+
+  .dark-mode .skill-pair img {
+    width: 30px;
+    height: 30px;
+  }
+
+}

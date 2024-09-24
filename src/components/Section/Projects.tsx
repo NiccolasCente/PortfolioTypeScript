@@ -1,12 +1,10 @@
 import React, { useRef } from 'react';
 import { useLanguage } from '../Hooks/LanguageContext';
-
 import { FaGithub } from 'react-icons/fa';
-
 import '../../assets/Projects.css';
 import TypeScriptIcon from '../../assets/MainIcons/TypeScriptIcon.png';
 import ReactIcon from '../../assets/MainIcons/ReactIcon.webp';
-import ViteIcon from '../../assets/MainIcons/Vite.js.png'
+import ViteIcon from '../../assets/MainIcons/Vite.js.png';
 import BootstrapIcon from '../../assets/MainIcons/BootstrapIcon.png';
 import CarsVideo from '../../assets/SectionIcons/Cars/CarVideo.mp4';
 import RecipesVideo from "../../assets/SectionIcons/Recipes/RecipesVideo.mp4";
@@ -27,6 +25,16 @@ const projects = [
     icons: [ReactIcon, ViteIcon, TypeScriptIcon, BootstrapIcon],
     codeUrl: 'https://github.com/NiccolasCente/CarRental',
     demoUrl: 'https://alugueseucarro.netlify.app/',
+    buttons: {
+      code: {
+        'pt-BR': 'Repositório',
+        'en': 'Repository',
+      },
+      demo: {
+        'pt-BR': 'Acessar Site',
+        'en': 'Access Site',
+      },
+    },
   },
   {
     id: 2,
@@ -42,6 +50,16 @@ const projects = [
     icons: [ReactIcon, ViteIcon, BootstrapIcon],
     codeUrl: 'https://github.com/NiccolasCente/ReceitasIniciantes',
     demoUrl: 'https://receitasiniciantes.netlify.app/',
+    buttons: {
+      code: {
+        'pt-BR': 'Repositório',
+        'en': 'Repository',
+      },
+      demo: {
+        'pt-BR': 'Acessar Site',
+        'en': 'Access Site',
+      },
+    },
   },
   {
     id: 3,
@@ -54,9 +72,19 @@ const projects = [
       'en': 'The Santos History site is a fan page dedicated to telling the rich history of the team, presenting information about key moments, idols, and achievements.',
     },
     videoUrl: SantosHistorico,
-    icons: [ReactIcon,ViteIcon, BootstrapIcon],
+    icons: [ReactIcon, ViteIcon, BootstrapIcon],
     codeUrl: 'https://github.com/NiccolasCente/Santos',
     demoUrl: 'https://santoshistorico.netlify.app/',
+    buttons: {
+      code: {
+        'pt-BR': 'Repositório',
+        'en': 'Repository',
+      },
+      demo: {
+        'pt-BR': 'Acessar Site',
+        'en': 'Access Site',
+      },
+    },
   },
 ];
 
@@ -64,7 +92,7 @@ const Projects: React.FC = () => {
   const { language } = useLanguage();
 
   return (
-    <section className="projects">
+    <section id='projetos' className="projects">
       <h2>Meus Projetos</h2>
       <p>Abaixo estão alguns dos projetos que desenvolvi.</p>
       {projects.map(project => (
@@ -80,9 +108,11 @@ const Projects: React.FC = () => {
             </div>
             <div className="project-buttons">
               <a href={project.codeUrl} target='_blank' rel="noopener noreferrer" className="button">
-                Repositório <FaGithub />
+                {project.buttons.code[language]} <FaGithub />
               </a>
-              <a href={project.demoUrl} target='_blank' rel="noopener noreferrer" className="button">Acessar Site</a>
+              <a href={project.demoUrl} target='_blank' rel="noopener noreferrer" className="button">
+                {project.buttons.demo[language]}
+              </a>
             </div>
           </div>
         </div>

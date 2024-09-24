@@ -6,6 +6,8 @@ import Main from './components/Main/Main';
 import Loading from './components/Loading/Loading';
 import AboutMe from './components/Section/AboutMe';
 import Projects from './components/Section/Projects';
+import Footer from './components/Footer/Footer';
+import ScrollToTop from './components/Hooks/ScrollToTop';
 
 const App: React.FC = () => {
   const [loading, setLoading] = useState(true);
@@ -32,6 +34,8 @@ const App: React.FC = () => {
           <Main />
           <AboutMe />
           <Projects />
+          <Footer />
+          <ScrollToTop />
         </div>
       </LanguageProvider>
     </ThemeProvider>

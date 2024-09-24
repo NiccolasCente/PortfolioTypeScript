@@ -1,0 +1,44 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--scroll-button-bg);
+  color: var(--scroll-button-color);
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  z-index: 1000;
+}
+
+.scroll-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll-to-top .arrow-icon {
+  font-size: 20px;
+}
+
+:root {
+  --scroll-button-bg: #ffffff;
+  --scroll-button-color: #000000;
+}
+
+[data-theme="dark"] {
+  --scroll-button-bg: #000000;
+  --scroll-button-color: #ffffff;
+}
+
+.light-mode .scroll-to-top {
+  background-color: #000000; 
+  color: #ffffff; 
+}
+
+.dark-mode .scroll-to-top {
+  background-color: #ffffff; 
+  color: #000000; 
+}

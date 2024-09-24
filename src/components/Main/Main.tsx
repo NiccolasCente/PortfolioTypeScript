@@ -15,6 +15,7 @@ import CSS3Icon from "../../assets/MainIcons/CSS3Icon.webp";
 import JSIcon from "../../assets/MainIcons/JSIcon.png";
 import TypeScriptIcon from "../../assets/MainIcons/TypeScriptIcon.png";
 import ReactIcon from "../../assets/MainIcons/ReactIcon.webp";
+import ViteIcon from "../../assets/MainIcons/Vite.js.png";
 import BootstrapIcon from "../../assets/MainIcons/BootstrapIcon.png";
 import FigmaIcon from "../../assets/MainIcons/FigmaIcon.webp";
 
@@ -56,16 +57,16 @@ const Main: React.FC = () => {
           <div id="icon-container">
           <AnimatedSection animation="fade-in">
             <a href="https://www.linkedin.com/in/niccolas-cente-ba989b23b/" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faLinkedinIn} size="2x" style={{marginRight:'7px'}} />
+              <FontAwesomeIcon icon={faLinkedinIn} size="2x" style={{marginRight:'10px'}} />
             </a>
             <a href="https://github.com/NiccolasCente" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faGithubAlt} size="2x" style={{marginRight:'7px'}} />
+              <FontAwesomeIcon icon={faGithubAlt} size="2x" style={{marginRight:'10px'}} />
             </a>
             <a href="https://wa.me/11934747011" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faWhatsapp} size="2x" style={{marginRight:'7px'}} />
+              <FontAwesomeIcon icon={faWhatsapp} size="2x" style={{marginRight:'10px'}} />
             </a>
             <a href="mailto:niccolas.dev@hotmail.com">
-              <FontAwesomeIcon icon={faEnvelope} size="2x" style={{marginRight:'7px'}} />
+              <FontAwesomeIcon icon={faEnvelope} size="2x" style={{marginRight:'10px'}} />
             </a>
           </AnimatedSection>
 
@@ -88,8 +89,15 @@ const Main: React.FC = () => {
               <AnimatedSection animation="fade-in">
                 <img src={JSIcon} alt="JSIcon" style={{marginRight:'7px'}} />
                 <img src={TypeScriptIcon} alt="TypeIcon"  style={{marginRight:'7px'}}/>
-                <img src={ReactIcon} alt="ReactIcon" style={{marginRight:'7px'}} />
               </AnimatedSection>
+
+              <div className="skill-pair" style={{ marginLeft: '20px' }}>
+              <AnimatedSection animation="fade-in">
+                <img src={ReactIcon} alt="ReactIcon" style={{marginRight:'7px'}} />
+                <img src={ViteIcon} alt="ViteIcon" style={{marginRight:'7px'}} />
+              </AnimatedSection>
+
+              </div>
 
               </div>
               <div className="skill-pair" style={{ marginLeft: '20px' }}>

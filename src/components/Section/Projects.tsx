@@ -6,6 +6,7 @@ import { FaGithub } from 'react-icons/fa';
 import '../../assets/Projects.css';
 import TypeScriptIcon from '../../assets/MainIcons/TypeScriptIcon.png';
 import ReactIcon from '../../assets/MainIcons/ReactIcon.webp';
+import ViteIcon from '../../assets/MainIcons/Vite.js.png'
 import BootstrapIcon from '../../assets/MainIcons/BootstrapIcon.png';
 import CarsVideo from '../../assets/SectionIcons/Cars/CarVideo.mp4';
 import RecipesVideo from "../../assets/SectionIcons/Recipes/RecipesVideo.mp4";
@@ -23,7 +24,7 @@ const projects = [
       'en': 'A car rental website is an online platform that allows users to rent cars for personal or commercial use. The site provides an interface to search, compare, and book cars.',
     },
     videoUrl: CarsVideo,
-    icons: [ReactIcon, TypeScriptIcon, BootstrapIcon],
+    icons: [ReactIcon, ViteIcon, TypeScriptIcon, BootstrapIcon],
     codeUrl: 'https://github.com/NiccolasCente/CarRental',
     demoUrl: 'https://alugueseucarro.netlify.app/',
   },
@@ -38,7 +39,7 @@ const projects = [
       'en': 'Beginner Recipes is an online platform created to help people with neurodivergences, providing an accessible space for those starting to learn how to cook.',
     },
     videoUrl: RecipesVideo,
-    icons: [ReactIcon, BootstrapIcon],
+    icons: [ReactIcon, ViteIcon, BootstrapIcon],
     codeUrl: 'https://github.com/NiccolasCente/ReceitasIniciantes',
     demoUrl: 'https://receitasiniciantes.netlify.app/',
   },
@@ -53,7 +54,7 @@ const projects = [
       'en': 'The Santos History site is a fan page dedicated to telling the rich history of the team, presenting information about key moments, idols, and achievements.',
     },
     videoUrl: SantosHistorico,
-    icons: [ReactIcon, BootstrapIcon],
+    icons: [ReactIcon,ViteIcon, BootstrapIcon],
     codeUrl: 'https://github.com/NiccolasCente/Santos',
     demoUrl: 'https://santoshistorico.netlify.app/',
   },

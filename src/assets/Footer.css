@@ -1,0 +1,99 @@
+.footer {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px 0;
+  text-align: center;
+  margin-top: 8em;
+}
+
+.dark-mode .footer{
+  background-color: rgb(61, 61, 61);
+  color: #ffffff
+}
+
+.dark-mode .footer-icon {
+  color: #ffffff;
+}
+
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-contact-section {
+  text-align: center;
+}
+
+.footer-heading {
+  color: #007bff; 
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.footer-subheading {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.footer-contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-contact-item span {
+  font-size: 1rem;
+}
+
+.footer-contact-item a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.dark-mode .footer-contact-item a {
+  color: #ffffff;
+}
+
+.footer-contact-item a:hover {
+  color: #007bff; 
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.footer-iconsWrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-icon {
+  font-size: 1.5rem;
+  color: #000000;
+  transition: color 0.3s ease;
+}
+
+.footer-icon:hover {
+  color: #007bff; 
+}
+
+.footer-copyright {
+  font-size: 0.875rem;
+}
+
+

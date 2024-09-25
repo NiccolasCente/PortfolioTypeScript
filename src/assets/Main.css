@@ -4,11 +4,10 @@ main {
   align-items: center;
   min-height: 70vh;
   background-color: rgb(247, 247, 247);
-
 }
 
 .dark-mode main {
-  background-color: rgb(0, 0, 0); 
+  background-color: rgb(0, 0, 0);
 }
 
 .content-container {
@@ -29,25 +28,25 @@ h1 {
 p {
   font-size: 1.2rem;
   margin-bottom: 30px;
-  color: #555
+  color: #555;
 }
 
 #icon-container {
   display: flex;
   justify-content: flex-start;
   gap: 15px;
-  margin-bottom: 20px;  
+  margin-bottom: 20px;
 }
 
 #icon-container a {
-  text-decoration: none; 
-  color: inherit; 
-  transition: color 0.3s, transform 0.3s; 
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s, transform 0.3s;
 }
 
 #icon-container a:hover {
-  color: #007BFF; 
-  transform: scale(1.1); 
+  color: #007BFF;
+  transform: scale(1.1);
 }
 
 #skills-container {
@@ -67,7 +66,6 @@ p {
   height: 40px;
   transition: transform 0.3s;
   border-radius: 12px;
-  
 }
 
 .skill-pair:hover img {
@@ -82,109 +80,10 @@ p {
 }
 
 .dark-mode #img-main img {
-  max-width: 20vw;
-  max-height: 20vw;
-  border-radius: 30px;
-  border: 1px solid rgb(255, 255, 255); 
+  border: 1px solid rgb(255, 255, 255);
 }
 
-
-@media (max-width: 420px) {
-  main {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 11em;
-  }
-
-  .content-container {
-    flex-direction: column-reverse;
-    align-items: center;
-    text-align: center;
-  }
-
-  #img-main img {
-    max-width: 40vw;
-    max-height: 40vw;
-    margin-bottom: 20px;
-  }
-
-
-  h1 {
-    font-size: 25px;
-    text-align: center;
-  }
-
-  p {
-    font-size: 20px;
-    text-align: center;
-
-  }
-
-  #icon-container {
-    justify-content: center;
-    gap: 10px;
-    margin-top: 15px;
-  }
-
-  #skills-container {
-    align-items: center;
-    padding-top: 2em;
-    gap: 15px;
-  }
-
-  .skill-pair img {
-    width: 22px;
-    height: 22px;
-  }
-
-  .dark-mode main {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .dark-mode .content-container {
-    flex-direction: column-reverse;
-    align-items: center;
-    text-align: center;
-  }
-
-  .dark-mode #img-main img {
-    max-width: 40vw;
-    max-height: 40vw;
-    margin-bottom: 20px;
-    border: 2px solid white;
-  }
-
-  .dark-mode h1 {
-    font-size: 25px;
-    text-align: center;
-  }
-
-  .dark-mode p {
-    font-size: 20px;
-    color: rgb(200, 200, 200);
-  }
-
-  .dark-mode #icon-container {
-    justify-content: center;
-    gap: 10px;
-    margin-top: 15px;
-  }
-
-  .dark-mode #skills-container {
-    align-items: center;
-    padding-top: 2em;
-    gap: 15px;
-  }
-
-  .dark-mode .skill-pair img {
-    width: 30px;
-    height: 30px;
-  }
-
-}
-
-@media (max-width: 430px){
+@media (max-width: 420px), (max-width: 430px) {
   main {
     flex-direction: column;
     align-items: center;
@@ -202,7 +101,6 @@ p {
     margin-bottom: 20px;
   }
 
-
   h1 {
     font-size: 25px;
     text-align: center;
@@ -210,6 +108,7 @@ p {
 
   p {
     font-size: 20px;
+    text-align: center;
   }
 
   #icon-container {
@@ -229,49 +128,11 @@ p {
     height: 30px;
   }
 
-  .dark-mode main {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .dark-mode .content-container {
-    flex-direction: column-reverse;
-    align-items: center;
-    text-align: center;
-  }
-
-  .dark-mode #img-main img {
-    max-width: 40vw;
-    max-height: 40vw;
-    margin-bottom: 20px;
-    border: 2px solid white;
-  }
-
-  .dark-mode h1 {
-    font-size: 25px;
-    text-align: center;
-  }
-
   .dark-mode p {
-    font-size: 20px;
     color: rgb(200, 200, 200);
   }
 
-  .dark-mode #icon-container {
-    justify-content: center;
-    gap: 10px;
-    margin-top: 15px;
+  .dark-mode #img-main img {
+    border: 2px solid white;
   }
-
-  .dark-mode #skills-container {
-    align-items: center;
-    padding-top: 2em;
-    gap: 15px;
-  }
-
-  .dark-mode .skill-pair img {
-    width: 30px;
-    height: 30px;
-  }
-
 }

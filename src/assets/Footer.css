@@ -3,7 +3,7 @@
   color: #000000;
   padding: 10px 0;
   text-align: center;
-  margin-top: 8em;
+  margin-top: 1em;
 }
 
 .dark-mode .footer {
@@ -99,10 +99,45 @@
   .footer-contact-info {
     flex-direction: column;
     gap: 20px;
+    align-items: center; 
   }
 
   .footer-bottom {
     flex-direction: column;
     gap: 20px;
+    align-items: center; 
+    text-align: center;
+  }
+
+  .footer-iconsWrapper {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 20px;
+  }
+
+  .footer-contact-info {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center; 
+  }
+
+  .footer-contact-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-iconsWrapper {
+    justify-content: center;
   }
 }

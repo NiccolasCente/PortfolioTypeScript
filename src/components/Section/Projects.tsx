@@ -1,4 +1,3 @@
-// src/components/Projects.tsx
 import React, { useRef } from 'react';
 import { useLanguage } from '../Hooks/LanguageContext';
 import { FaGithub } from 'react-icons/fa';
@@ -125,39 +124,19 @@ const Projects: React.FC = () => {
 const VideoComponent: React.FC<{ videoUrl: string }> = ({ videoUrl }) => {
   const videoRef = useRef<HTMLVideoElement>(null);
 
-  const isMobile = window.matchMedia("(max-width: 767px)").matches;
-
-  const handleMouseEnter = () => {
-    if (!isMobile) {
-      videoRef.current?.play();
-    }
-  };
-
-  const handleMouseLeave = () => {
-    if (!isMobile) {
-      videoRef.current?.pause();
-      videoRef.current!.currentTime = 0;
-    }
-  };
-
-  const handleTouchStart = () => {
-    if (isMobile) {
-      videoRef.current?.play();
-    }
-  };
-
   return (
-    <video
-      src={videoUrl}
-      className="project-video"
-      muted
-      loop
-      ref={videoRef}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-      onTouchStart={handleTouchStart}
-    />
+    <div className="video-container">
+      <video
+        src={videoUrl}
+        className="project-video"
+        muted
+        loop
+        ref={videoRef}
+        controls // 
+      />
+    </div>
   );
 };
+
 
 export default Projects;

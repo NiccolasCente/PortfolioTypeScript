@@ -1,4 +1,3 @@
-// src/components/Projects.tsx
 import React, { useRef } from 'react';
 import { useLanguage } from '../Hooks/LanguageContext';
 import { FaGithub } from 'react-icons/fa';
@@ -124,7 +123,6 @@ const Projects: React.FC = () => {
 
 const VideoComponent: React.FC<{ videoUrl: string }> = ({ videoUrl }) => {
   const videoRef = useRef<HTMLVideoElement>(null);
-
   
   const handleTouchStart = () => {
     videoRef.current?.play();
@@ -150,7 +148,12 @@ const VideoComponent: React.FC<{ videoUrl: string }> = ({ videoUrl }) => {
         videoRef.current!.currentTime = 0;
       }}
     />
+
+  
+   
+
   );
 };
+
 
 export default Projects;

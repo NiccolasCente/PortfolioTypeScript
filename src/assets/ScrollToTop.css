@@ -56,3 +56,10 @@
     bottom: 30px; 
   }
 }
+
+@media (max-width: 1280px){
+  .scroll-to-top{
+    right: 116px; 
+    bottom: 30px; 
+  }
+}

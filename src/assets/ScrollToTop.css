@@ -42,3 +42,17 @@
   background-color: #ffffff; 
   color: #000000; 
 }
+
+@media (max-width: 768px) {
+  .scroll-to-top {
+    right: 10px; 
+    bottom: 30px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .scroll-to-top {
+    right: 80px; 
+    bottom: 30px; 
+  }
+}

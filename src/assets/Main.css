@@ -93,6 +93,7 @@ p {
   main {
     flex-direction: column;
     align-items: center;
+    margin-top: 11em;
   }
 
   .content-container {
@@ -115,6 +116,8 @@ p {
 
   p {
     font-size: 20px;
+    text-align: center;
+
   }
 
   #icon-container {
@@ -130,8 +133,8 @@ p {
   }
 
   .skill-pair img {
-    width: 30px;
-    height: 30px;
+    width: 22px;
+    height: 22px;
   }
 
   .dark-mode main {

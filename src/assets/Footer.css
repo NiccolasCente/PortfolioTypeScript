@@ -1,179 +1,143 @@
-.projects {
+.footer {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px 0;
+  text-align: center;
+  margin-top: 1em;
+}
+
+.dark-mode .footer {
+  background-color: rgb(61, 61, 61);
+  color: #ffffff;
+}
+
+.dark-mode .footer-icon {
+  color: #ffffff;
+}
+
+.footer-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(247, 247, 247);
-  padding: 40px 0;
-  margin-top: 2em;
+  gap: 20px;
 }
 
-.dark-mode .projects {
-  background-color: rgb(0, 0, 0);
+.footer-contact-section {
+  text-align: center;
 }
 
-.project-box {
+.footer-heading {
+  color: #007bff;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.footer-subheading {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.footer-contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-contact-item span {
+  font-size: 1rem;
+}
+
+.footer-contact-item a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.dark-mode .footer-contact-item a {
+  color: #ffffff;
+}
+
+.footer-contact-item a:hover {
+  color: #007bff;
+}
+
+.footer-bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 40px 0;
-  width: 80%;
-  border-radius: 8px;
-  border: 1px solid white;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
 }
 
-.project-box img {
-  margin: 3px;
-  border-radius: 8px;
-}
-
-.project-box video {
-  width: 45%;
-  border-radius: 8px;
-  border: 1px solid white;
-  object-fit: cover; /* Adiciona esta linha */
-}
-
-.project-info {
-  width: 45%;
+.footer-iconsWrapper {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: left;
+  gap: 20px;
 }
 
-.project-info h3 {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
+.footer-icon {
+  font-size: 1.5rem;
+  color: #000000;
+  transition: color 0.3s ease;
 }
 
-.project-info p {
-  font-size: 1rem;
-  margin-bottom: 20px;
+.footer-icon:hover {
+  color: #007bff;
 }
 
-.project-languages {
-  display: flex;
-  justify-content: start;
-  gap: 1px;
-  margin-bottom: 20px;
+.footer-copyright {
+  font-size: 0.875rem;
 }
 
-.language-icon {
-  width: 25px;
-  height: 25px;
-  object-fit: contain;
-  transition: transform 0.3s, opacity 0.3s;
-}
-
-.language-icon:hover {
-  transform: scale(1.2);
-  opacity: 0.8;
-}
-
-.project-buttons {
-  display: flex;
-  gap: 15px;
-}
-
-.button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #a5a1a1;
-  color: rgb(0, 0, 0);
-  padding: 10px 15px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 0.9rem;
-}
-
-.button:hover {
-  background-color: #cfcfcf;
-}
-
-.button svg {
-  margin-left: 8px;
-}
-
-@media (max-width: 1024px) {
-  .project-box {
+@media (max-width: 768px) {
+  .footer-contact-info {
     flex-direction: column;
-    width: 90%; 
-    padding: 15px; 
-    border: none;
+    gap: 20px;
+    align-items: center; 
   }
 
-  .project-box video {
-    width: 100%;
-    display: block; /* Adiciona esta linha para garantir que o vídeo seja tratado como um bloco */
-  }
-
-  .project-info {
-    width: 100%;
+  .footer-bottom {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center; 
     text-align: center;
   }
 
-  .project-info h3 {
-    font-size: 1.6rem;
-  }
-
-  .project-info p {
-    font-size: 0.9rem;
-  }
-
-  .project-buttons {
+  .footer-iconsWrapper {
     justify-content: center;
   }
 }
 
-@media (max-width: 768px) {
-  .project-box {
-    width: 100%;
-    border: none;
-  }
-
-  .project-box video {
-    width: 100%;
-  }
-
-  .project-info h3 {
-    font-size: 1.4rem;
-  }
-
-  .project-info p {
-    font-size: 0.85rem;
-  }
-
-  .button {
-    padding: 8px 12px;
-    font-size: 0.8rem;
-  }
-
-  .language-icon {
-    width: 20px;
-    height: 20px;
-  }
-}
-
 @media (max-width: 480px) {
-  .project-info h3 {
-    font-size: 1.2rem;
+  .footer-container {
+    padding: 20px;
   }
 
-  .project-info p {
-    font-size: 0.75rem;
+  .footer-contact-info {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center; 
   }
 
-  .button {
-    padding: 6px 10px;
-    font-size: 0.7rem;
+  .footer-contact-item {
+    flex-direction: column;
+    text-align: center;
   }
 
-  .language-icon {
-    width: 18px;
-    height: 18px;
+  .footer-bottom {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
   }
-}
+
+  .footer-iconsWrapper {
+    justify-content: center;
+  }
+}  

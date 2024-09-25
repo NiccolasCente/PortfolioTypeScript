@@ -40,14 +40,23 @@ p {
 
 #icon-container a {
   text-decoration: none;
-  color: inherit;
-  transition: color 0.3s, transform 0.3s;
+  transition: transform 0.3s;
+  position: relative; 
+}
+
+#icon-container a svg {
+  fill: currentColor; 
 }
 
 #icon-container a:hover {
-  color: #007BFF;
+  color: #007BFF; 
   transform: scale(1.1);
 }
+
+#icon-container a:hover svg {
+  fill: #007BFF; 
+}
+
 
 #skills-container {
   display: flex;

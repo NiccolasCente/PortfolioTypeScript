@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { useLanguage } from '../Hooks/LanguageContext';
 import { FaGithub } from 'react-icons/fa';
 import '../../assets/Projects.css';
@@ -88,13 +88,24 @@ const projects = [
   },
 ];
 
+const sectionTexts = {
+  'pt-BR': {
+    title: 'Meus Projetos',
+    description: 'Abaixo estão alguns dos projetos que desenvolvi.',
+  },
+  'en': {
+    title: 'My Projects',
+    description: 'Below are some of the projects I have developed.',
+  },
+};
+
 const Projects: React.FC = () => {
   const { language } = useLanguage();
 
   return (
     <section id='projetos' className="projects">
-      <h2>Meus Projetos</h2>
-      <p>Abaixo estão alguns dos projetos que desenvolvi.</p>
+      <h2>{sectionTexts[language].title}</h2>
+      <p>{sectionTexts[language].description}</p>
       {projects.map(project => (
         <div key={project.id} className="project-box">
           <VideoComponent videoUrl={project.videoUrl} />
@@ -122,38 +133,16 @@ const Projects: React.FC = () => {
 };
 
 const VideoComponent: React.FC<{ videoUrl: string }> = ({ videoUrl }) => {
-  const videoRef = useRef<HTMLVideoElement>(null);
-  
-  const handleTouchStart = () => {
-    videoRef.current?.play();
-  };
-
-  const handleTouchEnd = () => {
-    videoRef.current?.pause();
-    videoRef.current!.currentTime = 0;
-  };
-
   return (
     <video
       src={videoUrl}
       className="project-video"
       muted
       loop
-      ref={videoRef}
-      onTouchStart={handleTouchStart}
-      onTouchEnd={handleTouchEnd} 
-      onMouseEnter={() => videoRef.current?.play()}
-      onMouseLeave={() => {
-        videoRef.current?.pause();
-        videoRef.current!.currentTime = 0;
-      }}
+      autoPlay
+      playsInline
     />
-
-  
-   
-
   );
 };
-
 
 export default Projects;

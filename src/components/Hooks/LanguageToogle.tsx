@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLanguage } from '@fortawesome/free-solid-svg-icons';
 import { useLanguage } from './LanguageContext'; 
@@ -7,13 +7,28 @@ import '../../assets/LanguageToggle.css';
 const LanguageToggle: React.FC = () => {
   const { language, toggleLanguage } = useLanguage();
   const [isOpen, setIsOpen] = useState(false); 
+  const toggleRef = useRef<HTMLDivElement | null>(null); 
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
   };
 
+  const handleClickOutside = (event: MouseEvent) => {
+    // se o clique ocorreu fora do toggle
+    if (toggleRef.current && !toggleRef.current.contains(event.target as Node)) {
+      setIsOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
   return (
-    <div className="language-toggle">
+    <div className="language-toggle" ref={toggleRef}>
       <div onClick={handleToggle} style={{ cursor: 'pointer', position: 'relative' }}>
         <FontAwesomeIcon icon={faLanguage} size="lg" />
       </div>

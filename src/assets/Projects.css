@@ -106,6 +106,7 @@
 
   .project-box video {
     width: 100%;
+    display: block; 
   }
 
   .project-info {
@@ -149,6 +150,12 @@
     width: 20px;
     height: 20px;
   }
+
+  .project-box video {
+    display: block; 
+    width: 100%;
+    height: auto; 
+  }
 }
 
 @media (max-width: 480px) {
@@ -168,5 +175,11 @@
   .language-icon {
     width: 18px;
     height: 18px;
+  }
+
+  .project-box video {
+    display: block; 
+    width: 100%;
+    height: auto;
   }
 }

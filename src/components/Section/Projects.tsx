@@ -125,25 +125,14 @@ const Projects: React.FC = () => {
 const VideoComponent: React.FC<{ videoUrl: string }> = ({ videoUrl }) => {
   const videoRef = useRef<HTMLVideoElement>(null);
 
-  const isMobile = window.matchMedia("(max-width: 767px)").matches;
-
-  const handleMouseEnter = () => {
-    if (!isMobile) {
-      videoRef.current?.play();
-    }
-  };
-
-  const handleMouseLeave = () => {
-    if (!isMobile) {
-      videoRef.current?.pause();
-      videoRef.current!.currentTime = 0;
-    }
-  };
-
+  
   const handleTouchStart = () => {
-    if (isMobile) {
-      videoRef.current?.play();
-    }
+    videoRef.current?.play();
+  };
+
+  const handleTouchEnd = () => {
+    videoRef.current?.pause();
+    videoRef.current!.currentTime = 0;
   };
 
   return (
@@ -153,9 +142,13 @@ const VideoComponent: React.FC<{ videoUrl: string }> = ({ videoUrl }) => {
       muted
       loop
       ref={videoRef}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
       onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd} 
+      onMouseEnter={() => videoRef.current?.play()}
+      onMouseLeave={() => {
+        videoRef.current?.pause();
+        videoRef.current!.currentTime = 0;
+      }}
     />
   );
 };

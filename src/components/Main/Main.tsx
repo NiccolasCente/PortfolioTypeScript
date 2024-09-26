@@ -4,7 +4,7 @@ import { useLanguage } from '../Hooks/LanguageContext';
 
 import '../../assets/Main.css'; 
 
-import { FaLinkedinIn, FaGithubAlt, FaWhatsapp, FaEnvelope } from 'react-icons/fa'; 
+import { FaLinkedinIn, FaGithub, FaWhatsapp, FaEnvelope } from 'react-icons/fa'; 
 
 import ImageMain from "../../assets/MainIcons/ImageMain.jpeg";
 import HTML5Icon from "../../assets/MainIcons/HTML5Icon.png";
@@ -55,7 +55,7 @@ const Main: React.FC = () => {
                 <FaLinkedinIn size="2em" style={{ marginRight: '10px', color: '#0A66C2' }} />
               </a>
               <a href="https://github.com/NiccolasCente" target="_blank" rel="noopener noreferrer">
-                <FaGithubAlt size="2em" style={{ marginRight: '10px', color: '#171515' }} />
+                <FaGithub  size="2em" style={{ marginRight: '10px', color: '#171515'  }} />
               </a>
               <a href="https://wa.me/11934747011" target="_blank" rel="noopener noreferrer">
                 <FaWhatsapp size="2em" style={{ marginRight: '10px', color: '#25D366' }} />

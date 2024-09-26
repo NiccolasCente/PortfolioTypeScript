@@ -14,7 +14,7 @@
 .project-box {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start; 
   margin: 40px 0;
   width: 80%;
   border-radius: 8px;
@@ -30,10 +30,13 @@
 }
 
 .project-box video {
-  width: 45%;
+  width: 45%; 
+  height: 250px; 
+  object-fit: cover; 
   border-radius: 8px;
   border: 1px solid white;
 }
+
 .project-info {
   width: 45%;
   display: flex;

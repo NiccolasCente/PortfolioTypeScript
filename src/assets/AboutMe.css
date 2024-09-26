@@ -121,3 +121,33 @@
     padding: 1em; 
   }
 }
+
+@media (max-width: 1400px) {
+  .about-me, .about-me-new {
+    margin: 0 auto; 
+    justify-content: center; 
+  }
+
+  .about-me-section {
+    margin-top: 7em;
+    text-align: center; 
+  }
+
+  .about-me-section img {
+    width: 80%; 
+    margin: 0 auto; 
+  }
+
+  .about-content, .about-content-new {
+    max-width: 100%; 
+    text-align: center; 
+  }
+
+  h3, h2 {
+    font-size: 2.2em; 
+  }
+
+  p {
+    font-size: 1.15em;
+  }
+}

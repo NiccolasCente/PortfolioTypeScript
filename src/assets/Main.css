@@ -91,6 +91,47 @@ p {
   border: 1px solid rgb(255, 255, 255);
 }
 
+.light-mode .button {
+  background-color: #a5a1a1; 
+  color: rgb(0, 0, 0); 
+}
+
+.light-mode .button:hover {
+  background-color: #cfcfcf; 
+}
+
+.dark-mode .button {
+  background-color: white; 
+  color: rgb(0, 0, 0); 
+}
+
+.dark-mode .button:hover {
+  background-color: #cfcfcf; 
+}
+
+.dark-mode #img-main img {
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.light-mode .btnStyle {
+  background-color: #a5a1a1; 
+  color: rgb(0, 0, 0); 
+}
+
+.light-mode .btnStyle:hover {
+  background-color: #cfcfcf; 
+}
+
+.dark-mode .btnStyle {
+  background-color: white; 
+  color: rgb(0, 0, 0); 
+}
+
+.dark-mode .btnStyle:hover {
+  background-color: #cfcfcf; 
+}
+
+
 @media (max-width: 420px), (max-width: 430px) {
   main {
     flex-direction: column;

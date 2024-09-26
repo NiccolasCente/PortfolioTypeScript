@@ -20,6 +20,12 @@ body.dark-mode p {
   color: white; 
 }
 
+button{
+  font-family: "Righteous", sans-serif;
+  cursor: pointer;
+
+}
+
 ::-webkit-scrollbar {
   width: 12px;
 }

@@ -1,10 +1,12 @@
 import React from 'react';
 import AnimatedSection from "../Hooks/AnimatedSection";
 import { useLanguage } from '../Hooks/LanguageContext'; 
+import useDownloadResume from '../Hooks/useDownloadResume.ts'; 
 
 import '../../assets/Main.css'; 
 
 import { FaLinkedinIn, FaGithub, FaWhatsapp, FaEnvelope } from 'react-icons/fa'; 
+import { FaFile } from 'react-icons/fa';
 
 import ImageMain from "../../assets/MainIcons/ImageMain.jpeg";
 import HTML5Icon from "../../assets/MainIcons/HTML5Icon.png";
@@ -18,6 +20,8 @@ import FigmaIcon from "../../assets/MainIcons/FigmaIcon.webp";
 
 const Main: React.FC = () => {
   const { language } = useLanguage(); 
+  const downloadResume = useDownloadResume(); 
+  const btnStyle = language === 'pt-BR' ? 'button light-mode' : 'button dark-mode';
 
   const translations = {
     'pt-BR': {
@@ -25,14 +29,16 @@ const Main: React.FC = () => {
       greeting: "Olá, sou o",
       name: "Niccolas Cente",
       description: "Um Desenvolvedor Front-End apaixonado por Design que reside em São Paulo, Brasil.",
-      techStack: "Tech Stack |"
+      techStack: "Tech Stack |",
+      downloadResume: "Baixar Currículo"
     },
     'en': {
       title: "Front-End Developer",
       greeting: "Hello, I'm",
       name: "Niccolas Cente",
       description: "A Front-End Developer passionate about Design living in São Paulo, Brazil.",
-      techStack: "Tech Stack |"
+      techStack: "Tech Stack |",
+      downloadResume: "Download Resume"
     }
   };
 
@@ -55,7 +61,7 @@ const Main: React.FC = () => {
                 <FaLinkedinIn size="2em" style={{ marginRight: '10px', color: '#0A66C2' }} />
               </a>
               <a href="https://github.com/NiccolasCente" target="_blank" rel="noopener noreferrer">
-                <FaGithub  size="2em" style={{ marginRight: '10px', color: '#171515'  }} />
+                <FaGithub  size="2em" style={{ marginRight: '10px', color: '#171515' }} />
               </a>
               <a href="https://wa.me/11934747011" target="_blank" rel="noopener noreferrer">
                 <FaWhatsapp size="2em" style={{ marginRight: '10px', color: '#25D366' }} />
@@ -65,7 +71,7 @@ const Main: React.FC = () => {
               </a>
             </AnimatedSection>
           </div>
-          
+
           <div id="skills-container">
             <div style={{ display: 'flex', alignItems: 'center' }}>
               <AnimatedSection animation="fade-in">
@@ -98,6 +104,13 @@ const Main: React.FC = () => {
               </div>
             </div>
           </div>
+
+          <AnimatedSection animation="fade-in">
+            <button onClick={downloadResume} className={btnStyle}>
+            <FaFile style={{ marginRight: '5px' }} />
+              {translations[language].downloadResume}
+            </button>
+          </AnimatedSection>
         </div>
 
         <AnimatedSection animation="fade-in">

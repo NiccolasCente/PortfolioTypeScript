@@ -113,23 +113,7 @@ p {
   border: 1px solid rgb(255, 255, 255);
 }
 
-.light-mode .btnStyle {
-  background-color: #a5a1a1; 
-  color: rgb(0, 0, 0); 
-}
 
-.light-mode .btnStyle:hover {
-  background-color: #cfcfcf; 
-}
-
-.dark-mode .btnStyle {
-  background-color: white; 
-  color: rgb(0, 0, 0); 
-}
-
-.dark-mode .btnStyle:hover {
-  background-color: #cfcfcf; 
-}
 
 
 @media (max-width: 420px), (max-width: 430px) {
@@ -184,4 +168,12 @@ p {
   .dark-mode #img-main img {
     border: 2px solid white;
   }
+
+  .light-mode .button,
+  .dark-mode .button {
+    margin: 0 auto;
+    margin-top: 1em;
+  }
 }
+
+

@@ -14,7 +14,11 @@ const CurriculoComponent: React.FC = () => {
   return (
     <div className="curriculo-container">
       <h2>Meu Currículo</h2>
-      <button className={btnStyle} onClick={downloadResume} style={{ marginTop: '20px', display: 'flex', alignItems: 'center' }}>
+      <button
+        className={btnStyle}
+        onClick={downloadResume}
+        style={{ marginTop: '20px', display: 'flex', alignItems: 'center' }}
+      >
         <FaFileAlt style={{ marginRight: '8px' }} /> 
         {language === 'pt-BR' ? 'Baixar Currículo' : 'Download Resume'}
       </button>

@@ -5,19 +5,26 @@ import CurriculumEnglish from '../../assets/MainIcons/Curriculo Ingles.pdf';
 const useDownloadResume = () => {
   const { language } = useLanguage(); 
 
-  const downloadResume = () => {
-    const url =
+  const downloadResume = async () => {
+    const url = 
       language === 'pt-BR'
-        ? CurriculumPTBR 
-        : CurriculumEnglish;   
-    
+        ? CurriculumPTBR
+        : CurriculumEnglish;
+
+    const response = await fetch(url);
+    const blob = await response.blob();
+
     const link = document.createElement('a');
-    link.href = url;
+    const objectUrl = URL.createObjectURL(blob);
+    link.href = objectUrl;
+
     link.download = language === 'pt-BR' 
-      ? 'Niccolas Cente Currículo PT-BR.pdf' 
+      ? 'Niccolas Cente Currículo PT-BR.pdf'
       : 'Niccolas Cente Curriculum English.pdf'; 
 
     link.click();
+
+    URL.revokeObjectURL(objectUrl);
   };
 
   return downloadResume;

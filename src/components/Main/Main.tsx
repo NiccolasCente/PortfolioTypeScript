@@ -106,7 +106,7 @@ const Main: React.FC = () => {
           </div>
 
           <AnimatedSection animation="fade-in">
-            <button onClick={downloadResume} className={btnStyle}>
+            <button onClick={downloadResume} id='button-main'className={btnStyle}>
             <FaFile style={{ marginRight: '5px' }} />
               {translations[language].downloadResume}
             </button>

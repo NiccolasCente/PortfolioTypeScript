@@ -36,14 +36,15 @@ const AboutMe: React.FC = () => {
         <>
           Estou sempre aprendendo e aprimorando minhas habilidades. <br />
           Algumas das áreas em que tenho experiência incluem: Desenvolvimento Front-end, 
-          UX/UI, Design Responsivo, <br />
+          UX/UI, <br /> Design Responsivo, <br />
           Consumção de APIs e Acessibilidade.
         </>
       ),
       approach: (
         <>
           Com uma abordagem de desenvolvimento moderna centrada <br />
-          no usuário, com interfaces intuitivas, atraentes e acessíveis buscando sempre a melhor experiência para o usuário!
+          no usuário, com interfaces intuitivas, atraentes e acessíveis buscando sempre a melhor experiência para
+          <br /> o usuário!
         </>
       )
     },

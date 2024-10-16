@@ -103,7 +103,7 @@
 }
 
 @media (max-width: 375px) {
-  .about-me-section {
+  .about-me-section { 
     margin-top: 1.5em; 
   }
 

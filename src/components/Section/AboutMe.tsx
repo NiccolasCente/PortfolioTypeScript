@@ -25,8 +25,9 @@ const AboutMe: React.FC = () => {
       tools: (
         <>
           Minhas ferramentas principais de desenvolvimento são: <strong style={{color:"#00BFFF"}}>React/Vite.js</strong> em combinação com 
-          <strong style={{color:"#00BFFF"}}> TypeScript</strong> e <br />
-          <strong style={{color:"#BA55D3 "}}> Bootstrap</strong>.
+          <strong style={{color:"#00BFFF"}}> TypeScript</strong>, <br />
+          <strong style={{color:"#BA55D3 "}}> Bootstrap</strong>, além
+          de utilizar <strong>WordPress</strong> e <strong>Elementor</strong> em alguns projetos.
         </>
       ),
       skills: "Minhas Habilidades e Serviços",
@@ -61,7 +62,8 @@ const AboutMe: React.FC = () => {
           My main development tools are: <strong style={{color:"#00BFFF"}}>React/Vite.js</strong> combined
           <br /> with 
           <strong style={{color:"#00BFFF"}}> TypeScript</strong> and
-          <strong style={{color:"#BA55D3 "}}> Bootstrap</strong>.
+          <strong style={{color:"#BA55D3 "}}> Bootstrap</strong>, as well as <br />
+          <strong>WordPress</strong> and <strong>Elementor</strong> in some projects.
         </>
       ),
       skills: "My Skills and Services",
@@ -82,6 +84,7 @@ const AboutMe: React.FC = () => {
       )
     }
   };
+  
 
   const langContent = translations[language] || translations['pt-BR']; 
   

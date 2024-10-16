@@ -9,6 +9,11 @@ import BootstrapIcon from '../../assets/MainIcons/BootstrapIcon.png';
 import CarsVideo from '../../assets/SectionIcons/Cars/CarVideo.mp4';
 import RecipesVideo from "../../assets/SectionIcons/Recipes/RecipesVideo.mp4";
 import SantosHistorico from "../../assets/SectionIcons/Santos/SantosHistorico.mp4";
+import WordPress from "../../assets/SectionIcons/WordPress/WordPress.mp4";
+import WordPressIcon from "../../assets/SectionIcons/word.png";
+import ElementorIcon from "../../assets/SectionIcons/elementor-icon.webp";
+import HTML5Icon from "../../assets/MainIcons/HTML5Icon.png";
+import CSS3Icon from "../../assets/MainIcons/CSS3Icon.webp";
 
 const projects = [
   {
@@ -75,6 +80,30 @@ const projects = [
     icons: [ReactIcon, ViteIcon, BootstrapIcon],
     codeUrl: 'https://github.com/NiccolasCente/Santos',
     demoUrl: 'https://santoshistorico.netlify.app/',
+    buttons: {
+      code: {
+        'pt-BR': 'Repositório',
+        'en': 'Repository',
+      },
+      demo: {
+        'pt-BR': 'Acessar Site',
+        'en': 'Access Site',
+      },
+    },
+  },
+  {
+    id: 4,
+    title: {
+      'pt-BR': 'Ip Dermatologia',
+      'en': 'Ip Dermatology',
+    },
+    description: {
+      'pt-BR': 'O site da Clínica de Dermatologia foi desenvolvido para apresentar os serviços e tratamentos oferecidos pela clínica. Meu amigo, que trabalha lá, solicitou minha ajuda para construir o site. Utilizamos o WordPress para gerenciar os plugins necessários e o Elementor para a estilização, junto com HTML5 e CSS3 para garantir um design funcional e moderno.',
+      'en': 'The Dermatology Clinic website was created to showcase the services and treatments offered by the clinic. My friend, who works there, asked for my help in building the site. We used WordPress to manage the necessary plugins and Elementor for styling, along with HTML5 and CSS3 to ensure a functional and modern design.',
+    },
+    videoUrl: WordPress,
+    icons: [ WordPressIcon, ElementorIcon, HTML5Icon, CSS3Icon],
+    demoUrl: 'https://ipdermatologia.com.br/',
     buttons: {
       code: {
         'pt-BR': 'Repositório',

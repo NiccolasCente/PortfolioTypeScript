@@ -8,7 +8,7 @@ import '../../assets/Main.css';
 import { FaLinkedinIn, FaGithub, FaWhatsapp, FaEnvelope } from 'react-icons/fa'; 
 import { FaFile } from 'react-icons/fa';
 
-import ImageMain from "../../assets/MainIcons/ImageMain.jpeg";
+import ImageMain2 from "../../assets/MainIcons/ImageMain2.jpeg"
 import HTML5Icon from "../../assets/MainIcons/HTML5Icon.png";
 import CSS3Icon from "../../assets/MainIcons/CSS3Icon.webp";
 import JSIcon from "../../assets/MainIcons/JSIcon.png";
@@ -25,19 +25,19 @@ const Main: React.FC = () => {
 
   const translations = {
     'pt-BR': {
-      title: "Desenvolvedor Front-End",
+      title: "Analista de Cyber Security",
       greeting: "Olá, sou o",
       name: "Niccolas Cente",
-      description: "Um Desenvolvedor Front-End apaixonado por Design que reside em São Paulo, Brasil.",
-      techStack: "Tech Stack |",
+      description: "Profissional em transição para Segurança Cibernética, com sólida base em desenvolvimento web, estudando continuamente redes, análise de vulnerabilidades e defesa digital.",
+      techStack: "Conhecimentos |",
       downloadResume: "Baixar Currículo"
     },
     'en': {
-      title: "Front-End Developer",
+      title: "Cyber Security Analyst",
       greeting: "Hello, I'm",
       name: "Niccolas Cente",
-      description: "A Front-End Developer passionate about Design living in São Paulo, Brazil.",
-      techStack: "Tech Stack |",
+      description: "Professional transitioning into Cyber Security, with a strong web development background, currently focused on networks, vulnerability assessment, and digital defense.",
+      techStack: "Knowledge |",
       downloadResume: "Download Resume"
     }
   };
@@ -48,7 +48,7 @@ const Main: React.FC = () => {
         <div id="text-container">
           <AnimatedSection animation="fade-in">
             <h1>
-              {translations[language].title}<br /> React <span>👋</span>
+              {translations[language].title}<br />  <span>👋</span>
             </h1>
             <p id="main-p-text">
               {translations[language].greeting} <strong>{translations[language].name}</strong>. {translations[language].description}
@@ -115,7 +115,7 @@ const Main: React.FC = () => {
 
         <AnimatedSection animation="fade-in">
           <div id="img-main" style={{ marginLeft: '20px' }}>
-            <img src={ImageMain} alt="Foto principal" />
+            <img src={ImageMain2} alt="Foto principal" />
           </div>
         </AnimatedSection>
       </div>

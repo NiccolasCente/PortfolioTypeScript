@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
       location: 'Localização',
       email: 'Email',
       emailAddress: 'niccolas.dev@hotmail.com',
-      copyright: '© 2024. Todos os direitos reservados.',
+      copyright: '© 2025. Todos os direitos reservados.',
     },
     'en': {
       contact: 'CONTACT',
@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
       location: 'Location',
       email: 'Email',
       emailAddress: 'niccolas.dev@hotmail.com',
-      copyright: '© 2024. All rights reserved.',
+      copyright: '© 2025. All rights reserved.',
     }
   };
 

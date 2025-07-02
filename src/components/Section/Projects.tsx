@@ -2,13 +2,16 @@ import React from 'react';
 import { useLanguage } from '../Hooks/LanguageContext';
 import { FaGithub } from 'react-icons/fa';
 import '../../assets/Projects.css';
+
 import TypeScriptIcon from '../../assets/MainIcons/TypeScriptIcon.png';
 import ReactIcon from '../../assets/MainIcons/ReactIcon.webp';
 import ViteIcon from '../../assets/MainIcons/Vite.js.png';
 import BootstrapIcon from '../../assets/MainIcons/BootstrapIcon.png';
+
 import CarsVideo from '../../assets/SectionIcons/Cars/CarVideo.mp4';
 import RecipesVideo from "../../assets/SectionIcons/Recipes/RecipesVideo.mp4";
-import SantosHistorico from "../../assets/SectionIcons/Santos/SantosHistorico.mp4";
+import Bordado from "../../assets/SectionIcons/Bordado/Bordado.mp4";
+
 import WordPress from "../../assets/SectionIcons/WordPress/WordPress.mp4";
 import WordPressIcon from "../../assets/SectionIcons/word.png";
 import ElementorIcon from "../../assets/SectionIcons/elementor-icon.webp";
@@ -69,17 +72,17 @@ const projects = [
   {
     id: 3,
     title: {
-      'pt-BR': 'Santos Histórico ⚽',
-      'en': 'Santos History ⚽',
+      'pt-BR': 'Miriam Bordados ✂️',
+      'en': 'Santos History ✂️',
     },
     description: {
-      'pt-BR': 'O site Santos Histórico é uma fanpage dedicada a contar a rica história do time, apresentando informações sobre os principais momentos, ídolos e conquistas.',
-      'en': 'The Santos History site is a fan page dedicated to telling the rich history of the team, presenting information about key moments, idols, and achievements.',
+      'pt-BR': 'Site desenvolvido para uma profissional autônoma especializada em bordados personalizados. A plataforma permite exibir seus produtos feitos à mão, com foco em uma experiência visual agradável, responsiva e voltada à divulgação de serviços artesanais.',
+      'en': 'Website developed for a self-employed professional specialized in personalized embroidery. The platform showcases her handmade products, focusing on a pleasant and responsive user experience designed to promote artisanal services.',
     },
-    videoUrl: SantosHistorico,
-    icons: [ReactIcon, ViteIcon, BootstrapIcon],
-    codeUrl: 'https://github.com/NiccolasCente/Santos',
-    demoUrl: 'https://santoshistorico.netlify.app/',
+    videoUrl: Bordado,
+    icons: [ReactIcon, ViteIcon, TypeScriptIcon, BootstrapIcon],
+    codeUrl: 'https://github.com/NiccolasCente/BordadosType',
+    demoUrl: 'https://miriamrosabordados.netlify.app/',
     buttons: {
       code: {
         'pt-BR': 'Repositório',

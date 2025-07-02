@@ -13,7 +13,7 @@ const Header: React.FC = () => {
 
   const translations = {
     'pt-BR': {
-      title: "Niccolas.dev",
+      title: "Niccolas.Cyber",
       navItems: {
         home: "Início",
         about: "Sobre",
@@ -22,7 +22,7 @@ const Header: React.FC = () => {
       }
     },
     'en': {
-      title: "Niccolas.dev",
+      title: "Niccolas.Cyber",
       navItems: {
         home: "Home",
         about: "About",
